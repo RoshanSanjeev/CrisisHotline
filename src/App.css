@@ -66,17 +66,18 @@
   background: #ff6b6b;
   color: white;
   border: none;
-  padding: 1.5rem 3rem;
-  font-size: 1.3rem;
-  font-weight: 600;
+  padding: 2rem 4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 8px 25px rgba(255,107,107,0.3);
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin: 0 auto 1rem;
+  gap: 1.5rem;
+  margin: 0 auto 2rem;
+  animation: pulse 2s infinite;
 }
 
 .call-button:hover {
@@ -85,15 +86,41 @@
   background: #ff5252;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .phone-icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .phone-number {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  opacity: 1;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  background: rgba(255,255,255,0.1);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.call-instruction {
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 0;
   opacity: 0.9;
+  color: #ffeb3b;
 }
 
 .features {

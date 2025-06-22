@@ -22,11 +22,12 @@ function App() {
         </div>
 
         <div className="call-section">
+          <p className="phone-number">(765) 245-8252</p>
           <button className="call-button" onClick={handleCall}>
             <span className="phone-icon">📞</span>
-            Call Crisis Hotline
+            CALL NOW - Crisis Support
           </button>
-          <p className="phone-number">(765) 245-8252</p>
+          <p className="call-instruction">👆 Click the button above to call immediately</p>
         </div>
 
         <div className="features">
